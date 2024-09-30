@@ -9,11 +9,13 @@ Author: Eva Donahue
 '''
 factor = int(input("Enter a number to generate a multiplication table: "))
 
+multiplier = 0
+
 count=1
 product = 0
 for count in range(12):
     product = product + factor
-    print(product)
+    print(factor,"x",count,"=", product)
 
 # Create your code 
 
@@ -25,15 +27,17 @@ Multiplication Table Generator with Custom Range, and Multi-Table Option
 3. Create a control structure to handle the user answer from step 1 
     What do we do if yes
     What do we do if no
-'''
+
 answer = input("Do your want custom range?(yes or no) : ")
 if answer == 'yes' :
     print("Excellent!")
 else:
     print("ok, end")
 
+
 start = int(input("What is your starting number? "))
 end = int(input("What is your end number? "))
 
 for custom in range (start, end):
     list = list + 
+'''
